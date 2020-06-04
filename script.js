@@ -14,30 +14,50 @@ $(function() {
    $('.create').on('click', function(e){
       e.preventDefault();
 
-      // getting the user inputted value of adjectiveOne and storing it in the variable adOne
-      let userAdOne = $('#adjectiveOne').val();
-      let userAdTwo = $('#adjectiveTwo').val();
-      let userNoun = $('#noun').val();
-      let userVerb = $('#verb').val();
-      let userAdverb = $('#adverb').val();
+      // getting the user inputted value using input id's and storing it in variables
+      // Adjectives
+      let userAdOne = $('#adOne').val();
+      let userAdTwo = $('#adTwo').val();
+      let userAdThree = $('#adThree').val();
+      // Nouns
+      let userNounOne = $('#noun').val();
+      let userNounTwo = $('#nounOne').val();
+      let userNounThree = $('#nounTwo').val();
+      let userPNounOne = $('#pNounOne').val();
+      let userPNounTwo = $('#pNounTwo').val();
+      let userPNounThree = $('#pNounThree').val();
+      let userPNounFour = $('#pNounFour').val();
+      // Verbs
+      let userVerbingOne = $('#verbingOne').val();
+      let userVerbingTwo = $('#verbingTwo').val();
+      let userVerbingThree = $('#verbingThree').val();
+      let userVerbingFour = $('#verbingFour').val();
+      // Other
+      let userGame = $('#game').val();
+      let userPlace = $('#place').val();
+      let userPlant = $('#plant').val();
+      let userBodyPart = $('#bodyPart').val();
+      let userNumber = $('number').val();
 
-      // creating an array called adjArray to store all user inputted adjective values
+      // creating array's to store all user inputted values
       adjArray = new Array();
+      nounArray = new Array();
+      verbArray = new Array();
+      otherArray = new Array();
 
-      // pushing the stored value from the variable adOne (that has adjectiveOne's inputted value) into the adjArray
-      adjArray.push(adOne, adTwo);
-
-
+      // push stored value from the variable adOne (that has adjectiveOne's inputted value) into the array
+      // Adjective Array
+      adjArray.push(userAdOne, userAdTwo, userAdThree);
+      // Noun Array
+      nounArray.push(userNounOne, userNounTwo, userNounThree, userPNounOne, userPNounTwo, userPNounThree, userPNounFour);
+      // Verb Array
+      verbArray.push(userVerbingOne, userVerbingTwo, userVerbingThree, userVerbingFour);
+      // Other Array
+      otherArray.push(userGame, userPlace, userPlant, userBodyPart, userNumber);
    })
 
-
-
-   
-
-   // store information in a variable
    // input user information in a string
    // display string on page
-   
 
 
 });

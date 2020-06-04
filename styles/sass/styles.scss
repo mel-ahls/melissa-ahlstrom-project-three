@@ -3,7 +3,7 @@
 
 .wrapper {
    max-width: 1200px;
-   width: 80%;
+   width: 90%;
    margin: 0 auto;
 }
 
@@ -26,12 +26,21 @@ h1, h2 {
 }
 
 
-.welcome, .words, .story {
+.welcome, .story {
    border: 2px solid red;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
    align-items: center;
+}
+
+form {
+   display: flex;
+   justify-content: space-around;
+}
+
+input.placeholder {
+   font-size: 15px;
 }
 
 button {
