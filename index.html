@@ -4,71 +4,75 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="styles/styles.css">
-   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Schoolbell&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="https://kit.fontawesome.com/73650af842.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Hind+Madurai:wght@300&display=swap"
+		rel="stylesheet">
    <title>Document</title>
 </head>
 <body>
 <!-- INTRO/DESCRIPTION -->
-<header id="intro" class="intro wrapper">
-   <div class="welcome">
-      <h1>Welcome to Fill Me In!</h1>
-      <p>A game of interesting stories, created by you.<br>Help finish the story by filling in the blanks!</p>
-      <button class="scroll">Begin</button>
-   </div>
+<header id="intro" class="intro">
+	<div class="boxContainer">
+		<div class="box1">
+			<h1>Fill Me<br>In</h1>
+		</div>
+		<div class="box2">
+			<i class="fas fa-pencil-alt"></i>
+		</div>
+		<div class="box3">
+			<i class="fas fa-lightbulb"></i>	
+		</div>
+		<div class="box4">
+			<p>A game of interesting stories, created by you. Help finish the story by filling in the blanks!</p>
+			<button class="scroll">Begin</button>
+		</div>
+	</div>
 </header>
 
 <!-- USER INPUTS -->
 <section id="userInputs" class="userInputs wrapper">
 	<div class="words">
-		<h2>Fill in the blanks:</h2>
+		<h2>Fill in the <span>blanks</span></h2>
 		<form>
-			<div class="partOne">
-					<!-- Adjectives -->
-				<label for="adjectives">Adjectives</label><br>
-				<input type="text" id="adOne" name="adjective"  placeholder="Adjective #1"><br>
-				<input type="text" id="adTwo" name="adjective" placeholder="Adjective #2"><br>
-				<input type="text" id="adThree" name="adjective" placeholder="Adjective #3"><br>
-
-				<!-- Nouns -->
-				<label for="nouns">Nouns</label><br>
-				<input type="text" id="nounOne" name="noun" placeholder="Noun #1"><br>
-				<input type="text" id="nounTwo" name="noun" placeholder="Noun #2"><br>
-				<input type="text" id="nounThree" name="noun" placeholder="Noun #3"><br>
-
-				<!-- Plural Nouns -->
-				<label for="nouns">Plural Nouns</label><br>
-				<input type="text" id="pNounOne" name="noun" placeholder="Plural Noun #1"><br>
-				<input type="text" id="pNounTwo" name="noun" placeholder="Plural Noun #2"><br>
-				<input type="text" id="pNounThree" name="noun" placeholder="Plural Noun #3"><br>
-				<input type="text" id="pNounFour" name="noun" placeholder="Plural Noun #4"><br>
+			<div class="flexed">
+				<label for="adjectives">Adjectives</label>
+				<input type="text" id="adOne" name="adjective"  placeholder="Adjective #1">
+				<input type="text" id="adTwo" name="adjective" placeholder="Adjective #2">
+				<input type="text" id="adThree" name="adjective" placeholder="Adjective #3">
 			</div>
-			<div class="partTwo">
-				<!-- Verbs -->
-				<label for="verbs">Verbs Ending in "ING"</label><br>
-				<input type="text" id="verbingOne" name="verb" placeholder="#1"><br>
-				<input type="text" id="verbingTwo" name="verb" placeholder="#2"><br>
-				<input type="text" id="verbingThree" name="verb" placeholder="#3"><br>
-				<input type="text" id="verbingFour" name="verb" placeholder="#4"><br>
 				
-				<!-- Others -->
-				<label for="plant">A Plant</label><br>
-				<input type="text" id="plant" name="plant" placeholder="A Plant"><br>
-				
-				<label for="game">A Game</label><br>
-				<input type="text" id="game" name="game" placeholder="A Game"><br>
-
-				<label for="bodyPart">A Part Of The Body</label><br>
-				<input type="text" id="bodyPart" name="bodyPart" placeholder="A Part Of The Body"><br>
-
-				<label for="place">A Place</label><br>
-				<input type="text" id="place" name="place" placeholder="A Place"><br>
-
-				<label for="number">A Number</label><br>
-				<input type="text" id="number" name="number" placeholder="A Number"><br>
+			<div class="flexed">
+				<label for="verbs">Verbs Ending in "ING"</label>
+				<input type="text" id="verbingOne" name="verb" placeholder="#1">
+				<input type="text" id="verbingTwo" name="verb" placeholder="#2">
+				<input type="text" id="verbingThree" name="verb" placeholder="#3">
+				<input type="text" id="verbingFour" name="verb" placeholder="#4">
 			</div>
-				<!-- SUBMIT BUTTON -->
-			<button class="button create">Submit</button>   
+
+			<div class="flexed">
+				<label for="nouns">Plural Nouns</label>
+				<input type="text" id="pNounOne" name="noun" placeholder="Plural Noun #1">
+				<input type="text" id="pNounTwo" name="noun" placeholder="Plural Noun #2">
+				<input type="text" id="pNounThree" name="noun" placeholder="Plural Noun #3">
+				<input type="text" id="pNounFour" name="noun" placeholder="Plural Noun #4">
+			</div>
+
+			<div class="flexed">
+				<label for="nouns">Nouns</label>
+				<input type="text" id="nounOne" name="noun" placeholder="Noun #1">
+				<input type="text" id="nounTwo" name="noun" placeholder="Noun #2">
+				<input type="text" id="nounThree" name="noun" placeholder="Noun #3">
+			</div> 
+
+			<div class="flexed">
+				<input type="text" id="plant" name="plant" placeholder="A Plant">
+				<input type="text" id="game" name="game" placeholder="A Game">
+				<input type="text" id="bodyPart" name="bodyPart" placeholder="A Part Of The Body">
+				<input type="text" id="place" name="place" placeholder="A Place">
+				<input type="text" id="number" name="number" placeholder="A Number">
+			</div>
+			<button class="button create">Submit</button>
 		</form>
 	</div>   
 </section>
@@ -76,8 +80,8 @@
 <!-- CURATED STORY -->
 <section id="end" class="end wrapper">
    <div class="story">
-      <p>Once Upon A Time... </p>
-      <p></p>
+      <h3>Vacation</h3>
+      <p id="storyText" class="storyText"></p>
    </div>
 </section>
 <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>

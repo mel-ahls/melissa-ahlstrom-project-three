@@ -2,57 +2,141 @@
 @import 'palette';
 
 .wrapper {
-   max-width: 1200px;
-   width: 90%;
-   margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 body {
-   font-family: $primaryFont;
-   font-size: 30px;
-   text-align: center;
+  font-family: $primaryFont;
+  font-size: 25px;
+  text-align: center;
+  background-color: #262424;
+  line-height: 1.6;
+  color: white;
 }
 
-h1, h2 {
-   font-family: $secondaryFont;
-   font-size: 55px;
+h1, h2, h3 {
+  font-family: $secondaryFont;
 }
 
-.intro, .userInputs, .end {
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+h1 {
+  color: white;
+  font-size: 130px;
+  line-height: 98px;
+  letter-spacing: -14px;
 }
 
-
-.welcome, .story {
-   border: 2px solid red;
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+h2 {
+  font-size: 55px;
+  span {
+    font-family: $primaryFont;
+    font-size: 50px;
+    border-bottom: 1px solid white;
+  }
 }
 
-form {
-   display: flex;
-   justify-content: space-around;
+.intro {
+  height: 100vh;
 }
 
-input.placeholder {
-   font-size: 15px;
+.boxContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+i {
+  font-size: 105px;
+}
+
+.box2 {
+  background: #70CE63;
+  // background: #FFE74C;
+}
+
+.box3 {
+  background: #38618C;
+}
+
+.box4 {
+  background: #E63946;
+  p {
+    width: 70%;
+  }
+}
+
+.box1, .box2, .box3, .box4 {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.end, .userInputs {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.words {
+  justify-content: space-between;
+}
+
+.flexed {
+  display: flex;
+  padding: 10px;
+  // justify-content: space-evenly;
 }
 
 button {
-   width: 150px;
-   height: 40px;
-   margin-top: 15px;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 20px;
+  }
+}
+
+::placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: white;
 }
 
 input {
-   margin: 15px;
+  width: 15%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  margin: 10px 8px;
 }
 
 input:focus {
-   border: 2px dotted $primaryColor;
+  border: 2px dotted $primaryColor;
+}
+
+label {
+  margin-right: 100px;
+}
+
+.story {
+  width: 70%;
 }

@@ -242,17 +242,88 @@ html {
 }
 
 body {
-  font-family: "Jost", sans-serif;
-  font-size: 30px;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 25px;
   text-align: center;
+  background-color: #262424;
+  line-height: 1.6;
+  color: white;
 }
 
-h1, h2 {
-  font-family: "Schoolbell", cursive;
+h1, h2, h3 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+h1 {
+  color: white;
+  font-size: 130px;
+  line-height: 98px;
+  letter-spacing: -14px;
+}
+
+h2 {
   font-size: 55px;
 }
 
-.intro, .userInputs, .end {
+h2 span {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 50px;
+  border-bottom: 1px solid white;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.boxContainer {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+i {
+  font-size: 105px;
+}
+
+.box2 {
+  background: #70CE63;
+}
+
+.box3 {
+  background: #38618C;
+}
+
+.box4 {
+  background: #E63946;
+}
+
+.box4 p {
+  width: 70%;
+}
+
+.box1, .box2, .box3, .box4 {
+  height: 50%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.end, .userInputs {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,8 +337,7 @@ h1, h2 {
           justify-content: center;
 }
 
-.welcome, .story {
-  border: 2px solid red;
+.story {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,28 +351,80 @@ h1, h2 {
           align-items: center;
 }
 
-form {
+.words {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-input.placeholder {
-  font-size: 15px;
+  padding: 10px;
 }
 
 button {
   width: 150px;
   height: 40px;
   margin-top: 15px;
+  border: none;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form label {
+  font-size: 20px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+:-ms-input-placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+::-ms-input-placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+::placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: white;
 }
 
 input {
-  margin: 15px;
+  width: 15%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  margin: 10px 8px;
 }
 
 input:focus {
   border: 2px dotted #CD853F;
+}
+
+label {
+  margin-right: 100px;
+}
+
+.story {
+  width: 70%;
 }
