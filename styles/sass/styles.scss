@@ -109,7 +109,7 @@ button {
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   label {
     font-size: 20px;
   }
@@ -121,8 +121,16 @@ form {
   color: white;
 }
 
+.labels {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 input {
-  width: 15%;
+  width: 20%;
   background: none;
   border: none;
   border-bottom: 2px solid white;
