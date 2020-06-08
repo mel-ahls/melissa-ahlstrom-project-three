@@ -14,6 +14,10 @@ $(function() {
    $('.create').on('click', function(e){
       e.preventDefault();
 
+      $('#clear').each(function () {
+         this.reset();
+      });
+
       // getting the user inputted value using input id's and storing it in variables with .val
 
       // Adjectives
