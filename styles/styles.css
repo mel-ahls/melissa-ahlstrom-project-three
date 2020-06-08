@@ -254,13 +254,6 @@ h1, h2, h3 {
   font-family: "Fredericka the Great", cursive;
 }
 
-h1 {
-  color: white;
-  font-size: 130px;
-  line-height: 98px;
-  letter-spacing: -14px;
-}
-
 h2, h3 {
   font-size: 55px;
 }
@@ -272,8 +265,38 @@ h2 span, h3 span {
   text-transform: uppercase;
 }
 
-.intro {
+.intro, .end, .userInputs {
   height: 100vh;
+}
+
+.end, .userInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+  border: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+button:hover {
+  font-size: 18px;
+  border-radius: 25px;
 }
 
 .boxContainer {
@@ -286,8 +309,11 @@ h2 span, h3 span {
       flex-wrap: wrap;
 }
 
-i {
-  font-size: 105px;
+h1 {
+  color: white;
+  font-size: 130px;
+  line-height: 98px;
+  letter-spacing: -14px;
 }
 
 .box2 {
@@ -296,6 +322,10 @@ i {
 
 .box3 {
   background: #38618C;
+}
+
+i {
+  font-size: 105px;
 }
 
 .box4 {
@@ -324,49 +354,11 @@ i {
           align-items: center;
 }
 
-.end, .userInputs {
-  height: 100vh;
-}
-
-.end, .userInputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.story {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .flexed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-}
-
-button {
-  width: 150px;
-  height: 40px;
-  margin-top: 15px;
-  border: none;
 }
 
 .insideFlex {
@@ -449,6 +441,17 @@ input:focus, button:focus {
 
 .story {
   width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Portrait tablet and small desktops */
@@ -495,6 +498,9 @@ input:focus, button:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .userInputs {
+    height: 100%;
   }
   .flexed {
     -webkit-box-orient: vertical;

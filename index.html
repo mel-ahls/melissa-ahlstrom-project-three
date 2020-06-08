@@ -5,13 +5,23 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="styles/styles.css">
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-32x32.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- FONT AWESOME -->
 	<script src="https://kit.fontawesome.com/73650af842.js" crossorigin="anonymous"></script>
+	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Hind+Madurai:wght@300&display=swap"
 		rel="stylesheet">
-   <title>Document</title>
+   <title>Fill Me In</title>
 </head>
 <body>
-<!-- INTRO/DESCRIPTION -->
+	
+<!-- FIRST SECTION -->
 <header id="intro" class="intro">
 	<div class="boxContainer">
 		<div class="box1">
@@ -30,69 +40,73 @@
 	</div>
 </header>
 
-<!-- USER INPUTS -->
+<!-- SECOND SECTION -->
 <section id="userInputs" class="userInputs wrapper">
-		<h2>Fill in the <span>blanks</span></h2>
-		<form id="clear">
-			<div class="insideFlex">
-				<div class="labels">
-					<label for="adjectives">Adjectives</label>
-					<label for="verbs">Verbs Ending in "ING"</label>
-					<label for="nouns">Plural Nouns</label>
-					<label for="nouns">Nouns</label>
-					<label for="Other">Other</label>
+	<h2>Fill in the <span>blanks</span></h2>
+	<form id="clear">
+		<div class="insideFlex">
+			<div class="labels">
+				<label for="adjectives">Adjectives</label>
+				<label for="verbs">Verbs Ending in "ING"</label>
+				<label for="nouns">Plural Nouns</label>
+				<label for="nouns">Nouns</label>
+				<label for="Other">Other</label>
+			</div>
+			<div class="inputs">
+				<div class="flexed">
+					<input type="text" id="adOne" name="adjective"  placeholder="Adjective #1">
+					<input type="text" id="adTwo" name="adjective" placeholder="Adjective #2">
+					<input type="text" id="adThree" name="adjective" placeholder="Adjective #3">
 				</div>
-				<div class="inputs">
-					<div class="flexed">
-						<input type="text" id="adOne" name="adjective"  placeholder="Adjective #1">
-						<input type="text" id="adTwo" name="adjective" placeholder="Adjective #2">
-						<input type="text" id="adThree" name="adjective" placeholder="Adjective #3">
-					</div>
-						
-					<div class="flexed">
-						<input type="text" id="verbingOne" name="verb" placeholder="#1">
-						<input type="text" id="verbingTwo" name="verb" placeholder="#2">
-						<input type="text" id="verbingThree" name="verb" placeholder="#3">
-						<input type="text" id="verbingFour" name="verb" placeholder="#4">
-					</div>
+					
+				<div class="flexed">
+					<input type="text" id="verbingOne" name="verb" placeholder="#1">
+					<input type="text" id="verbingTwo" name="verb" placeholder="#2">
+					<input type="text" id="verbingThree" name="verb" placeholder="#3">
+					<input type="text" id="verbingFour" name="verb" placeholder="#4">
+				</div>
 
-					<div class="flexed">
-						<input type="text" id="pNounOne" name="noun" placeholder="Plural Noun #1">
-						<input type="text" id="pNounTwo" name="noun" placeholder="Plural Noun #2">
-						<input type="text" id="pNounThree" name="noun" placeholder="Plural Noun #3">
-						<input type="text" id="pNounFour" name="noun" placeholder="Plural Noun #4">
-					</div>
+				<div class="flexed">
+					<input type="text" id="pNounOne" name="noun" placeholder="Plural Noun #1">
+					<input type="text" id="pNounTwo" name="noun" placeholder="Plural Noun #2">
+					<input type="text" id="pNounThree" name="noun" placeholder="Plural Noun #3">
+					<input type="text" id="pNounFour" name="noun" placeholder="Plural Noun #4">
+				</div>
 
-					<div class="flexed">
-						<input type="text" id="nounOne" name="noun" placeholder="Noun #1">
-						<input type="text" id="nounTwo" name="noun" placeholder="Noun #2">
-						<input type="text" id="nounThree" name="noun" placeholder="Noun #3">
-					</div>
+				<div class="flexed">
+					<input type="text" id="nounOne" name="noun" placeholder="Noun #1">
+					<input type="text" id="nounTwo" name="noun" placeholder="Noun #2">
+					<input type="text" id="nounThree" name="noun" placeholder="Noun #3">
+				</div>
 
-					<div class="flexed">
-						<input type="text" id="plant" name="plant" placeholder="A Plant">
-						<input type="text" id="game" name="game" placeholder="A Game">
-						<input type="text" id="bodyPart" name="bodyPart" placeholder="A Part Of The Body">
-						<input type="text" id="place" name="place" placeholder="A Place">
-						<input type="text" id="number" name="number" placeholder="A Number">
-					</div>
+				<div class="flexed">
+					<input type="text" id="plant" name="plant" placeholder="A Plant">
+					<input type="text" id="game" name="game" placeholder="A Game">
+					<input type="text" id="bodyPart" name="bodyPart" placeholder="A Part Of The Body">
+					<input type="text" id="place" name="place" placeholder="A Place">
+					<input type="text" id="number" name="number" placeholder="A Number">
 				</div>
 			</div>
-			<!-- ^ end of insideFlex -->
-			<div class="submit">
-				<button class="button create">Submit</button>
-			</div>
-		</form>  
+		</div>
+
+		<div class="submit">
+			<button class="button create">Submit</button>
+		</div>
+	</form>  
 </section>
 
-<!-- CURATED STORY -->
+<!-- LAST SECTION-->
 <section id="end" class="end wrapper">
    <div class="story">
       <h3>Vacation</h3>
       <p id="storyText" class="storyText"></p>
    </div>
 </section>
+
+<!-- SCRIPT -->
 <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
 <script src="script.js"></script>
+
 </body>
 </html>

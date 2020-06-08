@@ -1,6 +1,7 @@
 @import 'setup';
 @import 'palette';
 
+// GROUP STYLES
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -20,13 +21,6 @@ h1, h2, h3 {
   font-family: $secondaryFont;
 }
 
-h1 {
-  color: white;
-  font-size: 130px;
-  line-height: 98px;
-  letter-spacing: -14px;
-}
-
 h2, h3 {
   font-size: 55px;
   span {
@@ -37,9 +31,34 @@ h2, h3 {
   }
 }
 
-.intro {
+.intro, .end, .userInputs {
   height: 100vh;
 }
+
+.end, .userInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// BUTTON STYLES
+button {
+  font-family: $secondaryFont;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+  border: none;
+  transition: .4s;
+}
+
+button:hover {
+  font-size: 18px;
+  border-radius: 25px;
+}
+
+// FIRST SECTION
 
 .boxContainer {
   width: 100%;
@@ -48,8 +67,11 @@ h2, h3 {
   flex-wrap: wrap;
 }
 
-i {
-  font-size: 105px;
+h1 {
+  color: white;
+  font-size: 130px;
+  line-height: 98px;
+  letter-spacing: -14px;
 }
 
 .box2 {
@@ -58,6 +80,10 @@ i {
 
 .box3 {
   background: #38618C;
+}
+
+i {
+  font-size: 105px;
 }
 
 .box4 {
@@ -76,33 +102,10 @@ i {
   align-items: center;
 }
 
-.end, .userInputs {
-  height: 100vh;
-}
-
-.end, .userInputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.story {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+// MIDDLE SECTION
 .flexed {
   display: flex;
   padding: 10px;
-}
-
-button {
-  width: 150px;
-  height: 40px;
-  margin-top: 15px;
-  border: none;
 }
 
 .insideFlex {
@@ -150,8 +153,13 @@ input:focus, button:focus {
   border: 2px dotted $primaryColor;
 }
 
+// LAST SECTION
 .story {
   width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 // MEDIA QUERIES
@@ -197,6 +205,10 @@ input:focus, button:focus {
 
   input {
     display: flex;
+  }
+
+  .userInputs {
+    height: 100%;
   }
 
   .flexed {
