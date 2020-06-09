@@ -19,6 +19,7 @@ body {
 
 h1, h2, h3 {
   font-family: $secondaryFont;
+  margin: 0;
 }
 
 h2, h3 {
@@ -31,7 +32,7 @@ h2, h3 {
   }
 }
 
-.intro, .end, .userInputs {
+header, .userInputs, .end {
   height: 100vh;
 }
 
@@ -155,12 +156,12 @@ input:focus, button:focus {
 
 // LAST SECTION
 .story {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
 
 // MEDIA QUERIES
 /* Portrait tablet and small desktops */
@@ -191,8 +192,21 @@ input:focus, button:focus {
     width: 100%;
   }
 
-  .box2, .box3 {
-    flex-direction: row;
+  .box1 {
+    height: 35%;
+  }
+
+ .box2 {
+   height: 20%;
+   background: #38618C;
+ }
+
+  .box3 {
+    display: none;
+  }
+
+  .box4 {
+    height: 30%;
   }
 
   button {
@@ -213,7 +227,19 @@ input:focus, button:focus {
 
   .flexed {
     flex-direction: column;
+    padding: 0px;
+  }
 
+  .inputs {
+    width: 100%;
+    padding: 0px 60px;
+  }
+
+  input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 0px;
   }
 
 }

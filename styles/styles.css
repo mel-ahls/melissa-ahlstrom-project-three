@@ -252,6 +252,7 @@ body {
 
 h1, h2, h3 {
   font-family: "Fredericka the Great", cursive;
+  margin: 0;
 }
 
 h2, h3 {
@@ -265,7 +266,7 @@ h2 span, h3 span {
   text-transform: uppercase;
 }
 
-.intro, .end, .userInputs {
+header, .userInputs, .end {
   height: 100vh;
 }
 
@@ -440,7 +441,7 @@ input:focus, button:focus {
 }
 
 .story {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,9 +450,6 @@ input:focus, button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* Portrait tablet and small desktops */
@@ -482,11 +480,18 @@ input:focus, button:focus {
   .box1, .box2, .box3, .box4 {
     width: 100%;
   }
-  .box2, .box3 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .box1 {
+    height: 35%;
+  }
+  .box2 {
+    height: 20%;
+    background: #38618C;
+  }
+  .box3 {
+    display: none;
+  }
+  .box4 {
+    height: 30%;
   }
   button {
     margin: 15px 0px;
@@ -507,5 +512,21 @@ input:focus, button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0px;
+  }
+  .inputs {
+    width: 100%;
+    padding: 0px 60px;
+  }
+  input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 15px 0px;
   }
 }
